@@ -16,7 +16,7 @@ export function ReviewSuggestion() {
             Kim Pou Restaurant
           </span>
           <span class="font-normal text-sm mt-3 text-gray-600">
-            Rate this bussiness
+            Rate this business
           </span>
           <Stars />
         </div>

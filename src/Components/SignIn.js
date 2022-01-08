@@ -1,20 +1,22 @@
-export function SignUp({ hook }) {
+import React from "react";
+
+export function SignIn({ hook }) {
   return (
     <div>
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Create your account
+          Log in to your account
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600 max-w">
-          Already registered? &nbsp;
+          Don't have an account? &nbsp;
           <a
             href="#"
             className="font-bold text-blue-500 hover:text-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
             onClick={() => {
-              hook(true);
+              hook(false);
             }}
           >
-            Sign in
+            Sign Up
           </a>
         </p>
       </div>
@@ -71,17 +73,7 @@ export function SignUp({ hook }) {
                 for="terms-and-privacy"
                 className="ml-2 block text-sm text-gray-900"
               >
-                I agree to the
-                <a href="#" class="text-blue-500 hover:text-blue-700">
-                  {" "}
-                  Terms{" "}
-                </a>
-                and
-                <a href="#" class="text-blue-500 hover:text-blue-700">
-                  {" "}
-                  Privacy Policy
-                </a>
-                .
+                Remember me
               </label>
             </div>
 
@@ -90,7 +82,7 @@ export function SignUp({ hook }) {
                 type="submit"
                 class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
-                Sign up
+                Sign In
               </button>
             </div>
           </form>
